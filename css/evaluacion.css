@@ -1,0 +1,58 @@
+h1 {
+    
+    text-align: center;
+}
+
+
+body {
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+#Subtitle {
+    background-color: lightskyblue;
+    border-color: aqua;
+}
+
+h3{ 
+    padding-top:5px;
+    padding-bottom:5px;
+    color: white;
+}
+
+
+
+#grupos{
+    padding-bottom: 20px;
+}
+
+.seccion {
+    
+    padding-top: 2%;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+#icon { 
+    padding-right: 10px;
+    padding-left: 20px;}
+
+#message{ 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p{ padding-top: 2%;}
