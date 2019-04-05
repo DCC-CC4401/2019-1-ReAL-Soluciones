@@ -1,0 +1,271 @@
+<html>
+    <head>
+    
+    
+        <title >Rubrica parte administrador</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"/>
+        <link href="fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/evaluacion.css"/>
+
+    </head>
+
+    
+    
+    
+    
+    
+    <body>
+        
+        <h1 id="title"> Ficha de evaluación</h1>
+    
+        
+      <div class="seccion">
+            <div class="row" id="Subtitle" >
+                <h3 > <i class="fas fa-info" id="icon"></i>Detalles </h3>
+             </div>
+
+             <div class="row" id="detalles" >
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Curso</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col">Inicio</th>
+                      <th scope="col">Fin</th>
+                      <th scope="col">Duración esperada</th>
+                      <th scope="col">Rúbrica</th>   
+                      <th scope="col"><button type="button" class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td>Ingeneria de Software</td>
+                      <td style="color: red;">Cerrada</td>
+                      <td>19/04/2019</td>
+                      <td>23/04/2019</td>
+                      <td>8-10 minutos</td>
+                      <td><a href="#rubrica">Enlace</a></td>
+                      <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+             </div>
+          </div>
+      
+        
+  
+        
+        
+        <div class="seccion">
+            <div class="row" id="Subtitle">
+                <h3 ><i class="fas fa-user-graduate" id="icon"></i>Evaluadores </h3>
+             </div>
+
+            <div class="row" id="Evaluadores">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Notas entregadas</th>
+                      <th scope="col">Eliminación</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>4</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>3</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>2</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+             </div>
+        </div>
+        
+        <div class="seccion">
+            <div class="row" id="Subtitle">
+                <h3 ><i class="fas fa-users" id="icon"></i>Grupos </h3>
+             </div>
+
+            <div class="row" id="Evaluadores">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Evaluación</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Electronic Operations</td>
+                      <td><em>Para evaluar el grupo, se necessita abrir la evaluación</em></td>
+                 
+                    </tr>
+                  </tbody>
+                </table>
+             </div>
+        </div>
+        
+        <div class="seccion" id="rubrica">
+            <div class="row" id="Subtitle">
+                <h3 ><i class="fas fa-th-list" id="icon"></i> Rúbrica </h3>
+               
+             </div>
+            
+            <div class="row" id="message">
+              <p id="message" style="color:red;"> No se puede modificar la rúbrica porque la evaluación ya empezó !</p>
+             </div>
+            
+            <div class="row">
+                
+                
+                <table class="table table-striped table-responsive">
+                      <tr>
+                        <thead>
+                          <th colspan="2"></th>
+                          <th>0.0</th>
+                          <th>0.3</th>
+                          <th>0.5</th>
+                          <th>0.7</th>
+                          <th>1.0</th>
+                        </thead>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">Requisitos funcionales (RF)</td>
+                        <td>Definición requisitos</td>
+                        <td>No define RFs</td>
+                        <td>Solo definen correctamente 1-2 RFs</td>
+                        <td>Solo definen correctamente 3-4 RFs</td>
+                        <td>Solo definen correctamente 5-6 RFs</td>
+                        <td>Definen correctamente 7 RFs</td>
+                      </tr>
+                      <tr>
+                        <td>Origen</td>
+                        <td>No indican el origen de los RFs</td>
+                        <td>Solo indican correctamente el origin de 1-2 RFs</td>
+                        <td>Solo indican correctamente el origen de 3-4 RFs</td>
+                        <td>Solo indican correctamente el origen de 5-6 RFs</td>
+                        <td>Indican correctamente el origen de 7 RFs</td>
+                      </tr>
+                      <tr>
+                        <td>Definición tests</td>
+                        <td>No define como RFs seran testeados</td>
+                        <td>Solo indican como van a testear 1-3 RFs</td>
+                        <td>Solo indican como van a testear 4-6 RFs</td>
+                        <td>Indican correctamente cómo van a testear 7 RFs</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">Requisitos no funcionales (RNF)</td>
+                        <td>Definición requisitos</td>
+                        <td>No define RNFs</td>
+                        <td>Solo definen correctamente 1 RNF</td>
+                        <td>Definen correctamente 2 RNFs</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Origen</td>
+                        <td>No indican el origen de los RNFs</td>
+                        <td>Solo indican correctamente el origen de 1 RNF</td>
+                        <td>Indican correctamente el origen de 2 RNFs</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Metrica</td>
+                        <td>No define metricas para los RNFs</td>
+                        <td>Solo indican metrica para 1 RNF</td>
+                        <td>Indican metricas para 2 RNFs</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Objetivo de Negocio (ON)</td>
+                        <td>No define ON, no se deduce de documentos entregados, o no está formulado como objetivo</td>
+                        <td>ON apunta a una necesidad expresada por el cliente, expresado como objetivo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Objetivo de Proyecto (OP)</td>
+                        <td>No define OP, no se deduce de documentos entregados, o no está formulado como objetivo</td>
+                        <td>OP apunta a una necesidad expresada por el cliente, expresado como objetivo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Diagrama de Casos de Uso (DCU)</td>
+                        <td>No incluye un DCU</td>
+                        <td>Incluyen un DCU, pero no está bien hecho, o no sirve para entender el sistema</td>
+                        <td>Incluyen un DCU, pero tiene errores en la interacción de algún usuario con el sistema</td>
+                        <td>Incluyen un DCU hecho correctamente y que muestra correctamente las interacciones entre actores y el sistema</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Calidad del informe (Redacción y uso de imágenes))</td>
+                        <td>Informe con muchos errores ortográficos o de formato </td>
+                        <td>Algunos errores ortográficos, casi sin errores de formato</td>
+                        <td>Informe sin errores ortográficos ni de formato</td>
+                        <td>Incluyen un DCU hecho correctamente y que muestra correctamente las interacciones entre actores y el sistema</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                
+                
+                
+            </div>
+            
+            <p style="text-align:center"><button type="button" class="btn btn-success"><i class="fas fa-file-download"></i> Descargar notas</button> </p>
+         </div>
+        
+         
+             
+            
+                
+               
+                    
+                    
+                    
+                    
+        
+    
+    </body>
+
+</html>
