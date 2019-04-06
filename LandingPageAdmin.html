@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.1-web/css/all.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/evaluacion.css"/>-->
 	<!-- La parte de width=device-width dice que se adapte a pantalla del sipositivo -->
 	<!-- initial-scale=1 configura el nivel de zoom inicial -->
 	<title>Tarea 2 - ReAL Soluciones</title>
@@ -40,6 +41,8 @@ La clase .container-fluid provee un contenedor de ancho completo, usando el anch
 		.table-bordered es para mostrar el borde
 		.table-responsive-sm es para que aparezca la barra para mover la tabla para pantallas de < 576px
 		-->
+
+		<!-- Vista de cursos -->
 		<div class="seccion">
 			<div class="row">
 				<div class="col-sm-6">
@@ -59,6 +62,7 @@ La clase .container-fluid provee un contenedor de ancho completo, usando el anch
 							<th scope="col">Sección</th>
 							<th scope="col">Año</th>
 							<th scope="col">Semana</th>
+							<th scope="col"></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -68,6 +72,17 @@ La clase .container-fluid provee un contenedor de ancho completo, usando el anch
 							<td>1</td>
 							<td>2019</td>
 							<td>1</td>
+							<!-- Botones -->
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button></td>
+										</p>
+									</div>
+								</div>
+							</td>
 						</tr>
 						<tr>
 							<td>ALG</td>
@@ -75,12 +90,23 @@ La clase .container-fluid provee un contenedor de ancho completo, usando el anch
 							<td>1</td>
 							<td>2019</td>
 							<td>1</td>
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button></td>
+										</p>
+									</div>
+								</div>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 
+		<!-- Vista de Evaluadores -->
 		<div class="seccion">
 			<div class="row">
 				<div class="col-sm-6">
@@ -134,6 +160,115 @@ La clase .container-fluid provee un contenedor de ancho completo, usando el anch
 			</div>
 		</div>
 
+		<!-- Vista de Rúbricas -->
+		<div class="seccion">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3><i class="fas fa-th-list"></i> Rúbricas</h3>
+				</div>
+				<div class="col-sm-6">
+					<p style="text-align: right;"><button class="btn btn-primary"><i class="fas fa-plus"></i> Nueva rúbrica</button></p>
+				</div>
+			</div>
+			<div class="row" id="rubricas">
+				<table class="table table-hover table-bordered table-striped table-responsive-sm">
+					<thead>
+						<tr>
+							<th scope="col">Número (id?) (nombre?)</th>
+							<th scope="col">Cursos que la usan</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>rubrica_de_prueba</td>
+							<td>9</td>
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button>
+										</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>rubrica_mala</td>
+							<td>-1</td>
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button>
+										</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Vista de Evaluaciones -->
+		<div class="seccion">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3><i class="fas fa-file-alt"></i> Evaluaciones</h3>
+				</div>
+				<div class="col-sm-6">
+					<p style="text-align: right;"><button class="btn btn-primary"><i class="fas fa-plus"></i> Nueva evaluación</button></p>
+				</div>
+			</div>
+			<div class="row" id="evaluaciones">
+				<table class="table table-hover table-bordered table-striped table-responsive-sm">
+					<thead>
+						<tr>
+							<th scope="col">Número</th>
+							<th scope="col">Curso</th>
+							<th scope="col">Estado</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Ingeniería de software</td>
+							<td>Abierta</td>
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button>
+										</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>ALG</td>
+							<td>Cerrada</td>
+							<td>
+								<div class="row">
+									<div class="col-sm-12">
+										<p style="text-align: right;">
+											<button class="btn btn-success"><i class="fas fa-file-excel"></i> Exportar</button>
+											<button class="btn btn-warning"><i class="fas fa-pen"></i> Modificar</button>
+											<button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remover</button>
+										</p>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 
 	</div>
 
