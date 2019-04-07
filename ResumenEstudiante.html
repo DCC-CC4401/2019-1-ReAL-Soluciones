@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.1-web/css/all.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/evaluacion.css"/>-->
+	<link rel="stylesheet" type="text/css" href="css/evaluacion.css"/>
 	<!-- La parte de width=device-width dice que se adapte a pantalla del sipositivo -->
 	<!-- initial-scale=1 configura el nivel de zoom inicial -->
 	<title>Resumen de evaluación</title>
@@ -25,7 +25,7 @@
 		- Datos del equipo
 		- Quiénes presentaron -->
 		<div class="seccion">
-			<div class="row">
+			<div class="row" id="Subtitle">
 				<div class="col-sm-12">
 					<h3><i class="fas fa-info"></i> Detalles</h3>
 				</div>
@@ -115,8 +115,8 @@
 		</div>
 
 		<!-- Rúbrica -->
-		<div class="seccion" id="rubrica">
-            <div class="row">
+		<div class="seccion">
+            <div class="row" id="Subtitle">
 				<div class="col-sm-12">
 					<h3><i class="fas fa-th-list"></i> Rúbrica</h3>
 				</div>
@@ -224,7 +224,7 @@
 
 		<!-- Tabla que contiene los puntajes -->
 		<div class="seccion">
-			<div class="row">
+			<div class="row" id="Subtitle">
 				<div class="col-sm-12">
 					<h3><i class="fas fa-calculator"></i> Puntajes obtenidos</h3>
 				</div>
@@ -232,7 +232,7 @@
 			<div class="row">
 				<!-- .table-sm disminuye el relleno de la tabla a la mitad -->
 				<div class="col-sm-12">
-					<p>Recuerde que el orden de los evaluadores no se corresponde con su orden de aparición en la sección Detalles</p>
+					<p>Recuerde que el orden de los evaluadores no se corresponde con su orden de aparición en la sección Detalles.</p>
 					<table class="table table-sm table-borderless table-responsive-sm">
 						<thead>
 							<tr>
@@ -245,8 +245,9 @@
 							</tr>
 						</thead>
 						<tbody>
+							<!-- Requisitos funcionales -->
 							<tr>
-								<td>Lorem</td>
+								<td>RF: Definición requisitos</td>
 								<td>0,1</td>
 								<td>1,0</td>
 								<td>1,0</td>
@@ -254,7 +255,7 @@
 								<td>0,5</td>
 							</tr>
 							<tr>
-								<td>Ipsum</td>
+								<td>RF: Origen</td>
 								<td>0,7</td>
 								<td>0,8</td>
 								<td>0,9</td>
@@ -262,12 +263,70 @@
 								<td>0,2</td>
 							</tr>
 							<tr>
-								<td>Dolor</td>
-								<td>2,0</td>
-								<td>2,0</td>
-								<td>1,5</td>
-								<td>1,83</td>
-								<td>1,5</td>
+								<td>RF: Definición tests</td>
+								<td>0,3</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,43</td>
+								<td>0,5</td>
+							</tr>
+							<!-- Requisitos no funcionales -->
+							<tr>
+								<td>RNF: Definición requisitos</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,2</td>
+							</tr>
+							<tr>
+								<td>RNF: Origen</td>
+								<td>0,0</td>
+								<td>0,1</td>
+								<td>0,2</td>
+								<td>0,1</td>
+								<td>0,1</td>
+							</tr>
+							<tr>
+								<td>RF: Métrica</td>
+								<td>0,3</td>
+								<td>0,5</td>
+								<td>0,4</td>
+								<td>0,4</td>
+								<td>0,3</td>
+							</tr>
+							<!-- Otras métricas -->
+							<tr>
+								<td>Objetivo de negocio</td>
+								<td>0,7</td>
+								<td>0,8</td>
+								<td>0,9</td>
+								<td>0,8</td>
+								<td>0,2</td>
+							</tr>
+							<tr>
+								<td>Objetivo de proyecto</td>
+								<td>0,3</td>
+								<td>0,2</td>
+								<td>0,3</td>
+								<td>0,27</td>
+								<td>0,2</td>
+							</tr>
+							<tr>
+								<td>Diagrama de casos de uso</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,5</td>
+								<td>0,3</td>
+							</tr>
+							<tr>
+								<td>Calidad del informe</td>
+								<td>0,7</td>
+								<td>0,7</td>
+								<td>0,7</td>
+								<td>0,7</td>
+								<td>0,7</td>
 							</tr>
 						</tbody>
 					</table>
@@ -280,10 +339,10 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Nota final del grupo: 4,33</td>
+								<td>Nota final del grupo: 6,2</td>
 							</tr>
 							<tr>
-								<td>Promedio del curso: 3,2</td>
+								<td>Promedio del curso: 4,2</td>
 							</tr>
 							<tr>
 								<td>Duración de la presentación: 9 minutos</td>
